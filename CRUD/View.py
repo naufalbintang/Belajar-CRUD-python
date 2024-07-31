@@ -1,4 +1,17 @@
 from . import Operasi
+from . import Input
+
+def create_console():
+    print('\n\n' + '=' * 100)
+    print('Silakan tambah data buku\n')
+    penulis = input('Penulis\t: ')
+    judul = input('Judul\t: ')
+    tahun = Input.input_tahun()
+    
+    Operasi.create(penulis, judul, tahun)
+    print('Berikut adalah data baru anda')
+    read_console()
+    
 
 def read_console():
     data_file = Operasi.read()
@@ -24,3 +37,4 @@ def read_console():
     
     # footer
     print('=' * 100)
+    

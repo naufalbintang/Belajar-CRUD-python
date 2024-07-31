@@ -17,4 +17,3 @@ def init_console():
     except:
         print('database tidak ditemukan, silakan buat database baru.')
         Operasi.create_first_data()
-    # input('pause')
