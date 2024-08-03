@@ -6,3 +6,13 @@ def input_tahun():
         except:
             print('tolong masukkan angka')
     return hasil
+
+def input_no_buku():
+    while True:
+        try:
+            hasil = int(input('Nomor buku: '))
+            break
+        except:
+            print('Tolong masukkan nomo buku yang valid')
+    
+    return hasil
